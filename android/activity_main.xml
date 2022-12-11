@@ -21,21 +21,21 @@
         android:id="@+id/numLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
         android:text="7 Guesses Left"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnHello"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMessageEmail" />
 
     <TextView
         android:id="@+id/txtMessageEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Answer: __________"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnHello"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnHello" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEmail" />
 
     <Button
         android:id="@+id/btnHello"
@@ -56,7 +56,6 @@
         android:ems="10"
         android:hint="Enter Letter Here"
         android:inputType="textPersonName"
-        android:text="Enter Letter Here"
         app:layout_constraintBottom_toTopOf="@+id/btnHello"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
