@@ -69,11 +69,12 @@ public class MainActivity extends AppCompatActivity {
         //android.widget.EditText edtnum_Left = findViewById(R.id.edtnum_Left);
 
         if(subtractNumGuess){
-            if(numGuesses != 0){
+            if(numGuesses != 0 && gameover == false){
                 numGuesses--;
-                //num_Left.setText(numGuesses + " Guesses Left");
             }
         }
+
+        subtractNumGuess = false;
 
         if(numGuesses == 0){
             num_Left.setText("Game Over, Answer was " + answer);
